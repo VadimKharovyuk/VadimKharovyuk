@@ -38,17 +38,137 @@
             margin: 10px 0;
             text-decoration: none;
         }
+        .card {
+            background-color: #333333;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            border-radius: 23px;
+        }
+
+        .footer h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer .contact_inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer .social-links a {
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer .social-links a:hover {
+            color: crimson;
+        }
+
+
+        .hero {
+            background-image: url('/images/440850797_3721696354814533_3303651326190296084_n.jpg'); /* Замените на путь к вашему изображению фона */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .hero .container {
+            z-index: 2;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */
+            z-index: 1;
+        }
+
+        .hero .details {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .hero span {
+            font-size: 24px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .scroll_down {
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .scroll_down .line_wrapper {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scroll_down .line {
+            width: 2px;
+            height: 50px;
+            background-color: #ffffff;
+            animation: scroll 1.5s infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+
+
+
     </style>
 </head>
 <body>
 
-<!-- Preloader -->
-<div id="preloader">
-    <div class="loader_line"></div>
-</div>
 
-<!-- Main Wrapper -->
-<div class="main_wrap" data-magic-cursor="" data-color="crimson">
 
     <!-- Topbar -->
     <div class="topbar py-3">
@@ -71,6 +191,7 @@
     </div>
 
     <!-- Home Section -->
+    <!-- Home Section -->
     <div class="hero text-center text-white d-flex align-items-center justify-content-center" id="home" style="height: 100vh;">
         <div class="container">
             <div class="details">
@@ -85,86 +206,98 @@
         </div>
     </div>
 
-    <!-- About Section -->
-    <div class="section py-5" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="image">
-                        <img src="/images/440850797_3721696354814533_3303651326190296084_n.jpg" alt="About Me" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h3>About Me</h3>
-                    <p>Hello! I'm [Your Name], a Java developer with extensive experience in developing web applications. I specialize in Spring framework, Docker, HTML, and CSS. My projects include developing e-commerce websites, barber shop management systems, and commercial applications.</p>
-                    <ul class="list-unstyled">
-                        <li>Java Development</li>
-                        <li>Spring Framework</li>
-                        <li>Docker</li>
-                        <li>HTML & CSS</li>
-                    </ul>
-                    <a href="resume.pdf" class="btn btn-outline-light" download>Download CV</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Portfolio Section -->
-    <div class="section py-5" id="portfolio">
-        <div class="container">
-            <h3>Selected Works</h3>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="portfolio_item position-relative">
-                        <img src="images/project1.jpg" alt="Project 1" class="img-fluid">
-                        <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <div class="details text-center">
-                                <h4>Online Store</h4>
-                                <p>Developed a full-featured e-commerce platform.</p>
-                            </div>
+    <main>
+        <!-- About Section -->
+        <div class="section py-5" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img src="/images/Snapseed.jpg" alt="About Me" class="img-fluid">
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="portfolio_item position-relative">
-                        <img src="images/project2.jpg" alt="Project 2" class="img-fluid">
-                        <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <div class="details text-center">
-                                <h4>Barber Shop Management</h4>
-                                <p>Created a management system for barber shops.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="portfolio_item position-relative">
-                        <img src="images/project3.jpg" alt="Project 3" class="img-fluid">
-                        <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <div class="details text-center">
-                                <h4>Commercial Applications</h4>
-                                <p>Built various commercial applications for businesses.</p>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <h3>About Me</h3>
+                        <p>Hello! I'm Vadim Kharovyuk, a Java developer with extensive experience in developing web applications. I specialize in Spring framework, Docker, HTML, and CSS. My projects include developing e-commerce websites, barber shop management systems, and commercial applications.</p>
+                        <ul class="list-unstyled">
+                            <li>Java Development</li>
+                            <li>Spring Framework</li>
+                            <li>Docker</li>
+                            <li>HTML & CSS</li>
+                            <li>PostgreSQL</li>
+                            <li>Redis</li>
+                            <li>RabbitMQ</li>
+                            <li>Git</li>
+                        </ul>
+                        <a href="resume.pdf" class="btn btn-outline-light" download>Download CV</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Contact Section -->
-    <div class="section py-5" id="contact">
-        <div class="container">
-            <h3>Contact Me</h3>
-            <div class="contact_inner">
-                <div class="social-links">
-                    <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
-                    <a href="https://t.me/yourprofile" target="_blank">Telegram</a>
-                    <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
-                    <a href="mailto:youremail@example.com">Email</a>
+        <!-- Portfolio Section -->
+        <div class="section py-5" id="portfolio">
+            <div class="container">
+                <h3>Selected Works</h3>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="images/project1.jpg" alt="Project 1" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Online Store</h5>
+                                <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="images/project2.jpg" alt="Project 2" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Barber Shop Management</h5>
+                                <a href="https://github.com/yourusername/project2" target="_blank">GitHub Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="images/project3.jpg" alt="Project 3" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Commercial Applications</h5>
+                                <a href="https://github.com/yourusername/project3" target="_blank">GitHub Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="images/project4.jpg" alt="Project 4" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 4</h5>
+                                <a href="https://github.com/yourusername/project4" target="_blank">GitHub Repository</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Contact Section -->
+        <!-- Footer Section -->
+        <footer class="footer py-5" id="contact">
+            <div class="container">
+                <h3 class="text-center">Contact Me</h3>
+                <div class="contact_inner text-center">
+                    <div class="social-links">
+                        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+                        <a href="https://t.me/yourprofile" target="_blank">Telegram</a>
+                        <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+                        <a href="mailto:youremail@example.com">Email</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
 
 </div>
 
