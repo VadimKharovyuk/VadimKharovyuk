@@ -1,10 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Java Developer Portfolio">
+    <meta name="author" content="Your Name">
+    <title>Portfolio | Your Name</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .topbar {
+            background-color: #1f1f1f;
+        }
+        .menu ul li a {
+            color: #ffffff;
+        }
+        .about_inner .right ul li {
+            background-color: #333333;
+        }
+        .about_inner .right a {
+            background-color: #555555;
+        }
+        .portfolio_item .overlay {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .contact_inner form input, .contact_inner form textarea {
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #555555;
+        }
+        .contact_inner form button {
+            background-color: #555555;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader_line"></div>
+</div>
+
+<!-- Main Wrapper -->
+<div class="main_wrap" data-magic-cursor="" data-color="crimson">
+
+    <!-- Topbar -->
+    <div class="topbar py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a class="dark" href="#"><img src="images/dark.png" alt="Logo"></a>
+                    <a class="light" href="#"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="menu">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div class="hero text-center text-white d-flex align-items-center justify-content-center" id="home" style="height: 100vh;">
+        <div class="container">
+            <div class="details">
+                <h1>Your Name</h1>
+                <span>Java Developer</span>
+            </div>
+            <div class="scroll_down mt-5">
+                <div class="line_wrapper">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="images/about.jpg" alt="About Me" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>About Me</h3>
+                    <p>Hello! I'm [Your Name], a Java developer with extensive experience in developing web applications. I specialize in Spring framework, Docker, HTML, and CSS. My projects include developing e-commerce websites, barber shop management systems, and commercial applications.</p>
+                    <ul class="list-unstyled">
+                        <li>Java Development</li>
+                        <li>Spring Framework</li>
+                        <li>Docker</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                    <a href="resume.pdf" class="btn btn-outline-light" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="section py-5" id="portfolio">
+        <div class="container">
+            <h3>Selected Works</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio_item position-relative">
+                        <img src="images/project1.jpg" alt="Project 1" class="img-fluid">
+                        <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <div class="details text-center">
+                                <h4>Online Store</h4>
+                                <p>Developed a full-featured e-commerce platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio_item position-relative">
+                        <img src="images/project2.jpg" alt="Project 2" class="img-fluid">
+                        <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <div class="details text-center">
+                                <h4>Barber Shop Management</h4>
+                                <p>Created a management system for barber shops.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio_item position-relative">
+                        <img src="images/project3.jpg" alt="Project 3" class="img-fluid">
+                        <div class="overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <div class="details text-center">
+                                <h4>Commercial Applications</h4>
+                                <p>Built various commercial applications for businesses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section py-5" id="contact">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="github">GitHub URL</label>
+                    <input type="url" class="form-control" id="github" name="github" placeholder="GitHub URL">
+                </div>
+                <div class="form-group">
+                    <label for="dockerhub">Docker Hub URL</label>
+                    <input type="url" class="form-control" id="dockerhub" name="dockerhub" placeholder="Docker Hub URL">
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
