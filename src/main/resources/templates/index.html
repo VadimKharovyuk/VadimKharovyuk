@@ -32,13 +32,11 @@
         .portfolio_item .overlay {
             background-color: rgba(0, 0, 0, 0.8);
         }
-        .contact_inner form input, .contact_inner form textarea {
-            background-color: #333333;
+        .contact_inner .social-links a {
+            display: block;
             color: #ffffff;
-            border: 1px solid #555555;
-        }
-        .contact_inner form button {
-            background-color: #555555;
+            margin: 10px 0;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -76,7 +74,7 @@
     <div class="hero text-center text-white d-flex align-items-center justify-content-center" id="home" style="height: 100vh;">
         <div class="container">
             <div class="details">
-                <h1>Your Name</h1>
+                <h1>Vadim Kharovyuk</h1>
                 <span>Java Developer</span>
             </div>
             <div class="scroll_down mt-5">
@@ -93,7 +91,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="image">
-                        <img src="images/about.jpg" alt="About Me" class="img-fluid">
+                        <img src="/images/440850797_3721696354814533_3303651326190296084_n.jpg" alt="About Me" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -157,29 +155,14 @@
     <div class="section py-5" id="contact">
         <div class="container">
             <h3>Contact Me</h3>
-            <form action="submit_form.php" method="post">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+            <div class="contact_inner">
+                <div class="social-links">
+                    <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+                    <a href="https://t.me/yourprofile" target="_blank">Telegram</a>
+                    <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+                    <a href="mailto:youremail@example.com">Email</a>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="github">GitHub URL</label>
-                    <input type="url" class="form-control" id="github" name="github" placeholder="GitHub URL">
-                </div>
-                <div class="form-group">
-                    <label for="dockerhub">Docker Hub URL</label>
-                    <input type="url" class="form-control" id="dockerhub" name="dockerhub" placeholder="Docker Hub URL">
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </div>
 
