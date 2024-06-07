@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Java Developer Portfolio">
     <meta name="author" content="Your Name">
-    <title>Portfolio | Your Name</title>
-    <!-- Bootstrap CSS -->
+    <title>Portfolio Vadim Kharovyuk </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -22,14 +21,20 @@
             background-color: #1f1f1f;
             display: flex;
             align-items: center;
-
         }
 
-        .menu ul li a {
+        .menu ul.nav li.nav-item {
+            margin-right: 20px; /* Добавляем отступ справа между элементами */
+        }
+
+        .menu ul.nav li.nav-item:last-child {
+            margin-right: 0; /* Убираем отступ у последнего элемента */
+        }
+
+        .menu ul.nav li.nav-item a.nav-link {
             color: #ffffff;
-            padding: 0 15px; /* Отступы для ссылок в меню */
-            line-height: 35px; /* Выравнивание текста по высоте */
         }
+
 
         .about_inner .right ul li {
             background-color: #333333;
@@ -134,33 +139,12 @@
             margin-top: 10px;
         }
 
-        .scroll_down {
-            position: relative;
-            z-index: 2;
-            cursor: pointer;
-        }
-
-        .scroll_down .line_wrapper {
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .scroll_down .line {
-            width: 2px;
-            height: 50px;
-            background-color: #ffffff;
-            animation: scroll 1.5s infinite;
-        }
-
-
 
     </style>
 </head>
 <body>
 
-    <!-- Topbar -->
+
     <div class="topbar py-3">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
@@ -270,7 +254,7 @@
                         <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
                         <a href="https://t.me/yourprofile" target="_blank">Telegram</a>
                         <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
-                        <a href="mailto:youremail@example.com">Email</a>
+                        <a href="mailto:harovyuk.vadim@icloud.com">Email</a>
                     </div>
                 </div>
             </div>
@@ -278,12 +262,10 @@
 
     </main>
 
-</div>
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="scripts.js"></script>
 </body>
 </html>
