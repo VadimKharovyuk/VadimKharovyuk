@@ -1,12 +1,298 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <meta name="description" content="Java Developer Portfolio">-->
+<!--    <meta name="author" content="Your Name">-->
+<!--    <title>Portfolio Vadim Kharovyuk </title>-->
+<!--    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: 'Poppins', sans-serif;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--            box-sizing: border-box;-->
+<!--            background-color: #121212;-->
+<!--            color: #ffffff;-->
+<!--        }-->
+<!--        .topbar {-->
+<!--            height: 60px; /* Задаем высоту */-->
+<!--            background-color: #070707;-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--        }-->
+
+<!--        .menu ul.nav li.nav-item {-->
+<!--            margin-right: 20px; /* Добавляем отступ справа между элементами */-->
+<!--        }-->
+
+<!--        .menu ul.nav li.nav-item:last-child {-->
+<!--            margin-right: 0; /* Убираем отступ у последнего элемента */-->
+<!--        }-->
+
+<!--        .menu ul.nav li.nav-item a.nav-link {-->
+<!--            color: #ffffff;-->
+<!--        }-->
+
+
+
+<!--        .contact_inner .social-links a {-->
+<!--            display: block;-->
+<!--            color: #ffffff;-->
+<!--            margin: 10px 0;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+<!--        .card {-->
+<!--            background-color: #333333;-->
+<!--            border: none;-->
+<!--            transition: transform 0.3s ease;-->
+<!--        }-->
+<!--        .card:hover {-->
+<!--            transform: scale(1.05);-->
+<!--        }-->
+<!--        .card a {-->
+<!--            color: #ffffff;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+<!--        .card a:hover {-->
+<!--            text-decoration: underline;-->
+<!--        }-->
+<!--        .footer {-->
+<!--            background-color: #1f1f1f;-->
+<!--            color: #ffffff;-->
+<!--            border-radius: 23px;-->
+<!--        }-->
+
+<!--        .footer h3 {-->
+<!--            font-size: 24px;-->
+<!--            margin-bottom: 20px;-->
+<!--        }-->
+
+<!--        .footer .contact_inner {-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            align-items: center;-->
+<!--        }-->
+
+<!--        .footer .social-links {-->
+<!--            display: flex;-->
+<!--            flex-wrap: wrap;-->
+<!--            justify-content: center;-->
+<!--            gap: 20px;-->
+<!--        }-->
+
+<!--        .footer .social-links a {-->
+<!--            color: #ffffff;-->
+<!--            font-size: 18px;-->
+<!--            text-decoration: none;-->
+<!--            transition: color 0.3s ease;-->
+<!--        }-->
+
+<!--        .footer .social-links a:hover {-->
+<!--            color: crimson;-->
+<!--        }-->
+
+
+<!--        .hero {-->
+<!--            background-image: url('440850797_3721696354814533_3303651326190296084_n.jpg'); /* Замените на путь к вашему изображению фона */-->
+<!--            background-size: cover;-->
+<!--            background-position: center;-->
+<!--            height: 100vh;-->
+<!--            position: relative;-->
+<!--        }-->
+
+<!--        .hero .container {-->
+<!--            z-index: 2;-->
+<!--        }-->
+
+<!--        .hero::before {-->
+<!--            content: '';-->
+<!--            position: absolute;-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--            width: 100%;-->
+<!--            height: 100%;-->
+<!--            background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */-->
+<!--            z-index: 1;-->
+<!--        }-->
+
+<!--        .hero .details {-->
+<!--            position: relative;-->
+<!--            z-index: 2;-->
+<!--        }-->
+
+<!--        .hero h1 {-->
+<!--            font-size: 48px;-->
+<!--            font-weight: bold;-->
+<!--        }-->
+
+<!--        .hero span {-->
+<!--            font-size: 24px;-->
+<!--            display: block;-->
+<!--            margin-top: 10px;-->
+<!--        }-->
+
+
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+
+<!--    <div class="topbar py-3">-->
+<!--        <div class="container">-->
+<!--            <div class="d-flex justify-content-between align-items-center">-->
+<!--                <div class="menu">-->
+<!--                    <ul class="nav">-->
+<!--                        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="hero text-center text-white d-flex align-items-center justify-content-center" id="home" style="height: 100vh;">-->
+<!--        <div class="container">-->
+<!--            <div class="details">-->
+<!--                <h1>Vadim Kharovyuk</h1>-->
+<!--                <span>Java Developer</span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--    <main>-->
+<!--        &lt;!&ndash; About Section &ndash;&gt;-->
+<!--        <div class="section py-5" id="about">-->
+<!--            <div class="container">-->
+<!--                <div class="row align-items-center">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="image">-->
+<!--                            <img src="Snapseed.jpg" alt="About Me" class="img-fluid">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <h3>About Me</h3>-->
+<!--                        <p>Hello! I'm Vadim Kharovyuk, a Java developer with extensive experience in developing web applications. I specialize in Spring framework, Docker, HTML, and CSS. My projects include developing e-commerce websites, barber shop management systems, and commercial applications.</p>-->
+<!--                        <ul class="list-unstyled">-->
+<!--                            <li>Java Development</li>-->
+<!--                            <li>Spring Framework</li>-->
+<!--                            <li>Docker</li>-->
+<!--                            <li>HTML & CSS</li>-->
+<!--                            <li>PostgreSQL</li>-->
+<!--                            <li>Redis</li>-->
+<!--                            <li>RabbitMQ</li>-->
+<!--                            <li>Git</li>-->
+<!--                            <li>Maven</li>-->
+<!--                        </ul>-->
+<!--&lt;!&ndash;                        <a href="resume.pdf" class="btn btn-outline-light" download>Download CV</a>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        <div class="section py-5" id="portfolio">-->
+<!--            <div class="container">-->
+<!--                <h3>Selected Works</h3>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-3 mb-4">-->
+<!--                        <div class="card h-100">-->
+<!--                            <img src="git.jpg" alt="Project 1" class="card-img-top">-->
+<!--                            <div class="card-body">-->
+<!--                                <h5 class="card-title">Media Store</h5>-->
+<!--                                <p>Онлайн магазин електроной технки </p>-->
+<!--                                <a href="https://github.com/VadimKharovyuk/mediamarkt" target="_blank">GitHub Repository</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="col-md-3 mb-4">-->
+<!--                        <div class="card h-100">-->
+<!--                            <img src="git.jpg" alt="Project 3" class="card-img-top">-->
+<!--                            <div class="card-body">-->
+<!--                                <h5 class="card-title">MilanaRestoran</h5>-->
+<!--                                <p>Ресторан  блюд с возможностью бронирования столика  и заказом еды на указаный адрес </p>-->
+<!--                                <a href="https://github.com/VadimKharovyuk/MilanaRestoran/tree/main" target="_blank">GitHub Repository</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+
+<!--                    <div class="col-md-3 mb-4">-->
+<!--                        <div class="card h-100">-->
+<!--                            <img src="git.jpg" alt="Project 3" class="card-img-top">-->
+<!--                            <div class="card-body">-->
+<!--                                <h5 class="card-title">Lucky Bank</h5>-->
+<!--                                <p>Банк с возможностью создавать акаунт  и карты для отправки среддств с карты на карту </p>-->
+<!--                                <a href="https://github.com/VadimKharovyuk/LuckyBank" target="_blank">GitHub Repository</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="col-md-3 mb-4">-->
+<!--                        <div class="card h-100">-->
+<!--                            <img src="git.jpg" alt="Project 3" class="card-img-top">-->
+<!--                            <div class="card-body">-->
+<!--                                <h5 class="card-title">Modern_Clinic</h5>-->
+<!--                                <p>Клиника  с возможностью  записаться к доктору  посмотеть записи в личном акаунте  (личный акаунт для доктора + админ )</p>-->
+<!--                                <a href="https://github.com/VadimKharovyuk/Modern_Clinic" target="_blank">GitHub Repository</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+
+<!--                    <div class="col-md-3 mb-4">-->
+<!--                        <div class="card h-100">-->
+<!--                            <img src="git.jpg" alt="Project 4" class="card-img-top">-->
+<!--                            <div class="card-body">-->
+<!--                                <h5 class="card-title">Personnel management</h5>-->
+<!--                                <p>Система управления персоналом</p>-->
+<!--                                <a href="https://github.com/VadimKharovyuk/Personnel_management_system" target="_blank">GitHub Repository</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <footer class="footer py-5" id="contact">-->
+<!--            <div class="container">-->
+<!--                <h3 class="text-center">Contact Me</h3>-->
+<!--                <div class="contact_inner text-center">-->
+<!--                    <div class="social-links">-->
+<!--                        <a href="https://www.instagram.com/name_lucky_lucky_/" target="_blank">Instagram</a>-->
+<!--                        <a href="https://t.me/name_lucky_lucky" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>-->
+<!--                        <a href="https://www.facebook.com/profile.php?id=100009226154613" target="_blank">Facebook</a>-->
+<!--                        <a href="mailto:harovyuk.vadim@icloud.com">Email</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </footer>-->
+
+
+<!--    </main>-->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Java Developer Portfolio">
-    <meta name="author" content="Your Name">
-    <title>Portfolio Vadim Kharovyuk </title>
+    <meta name="author" content="Vadim Kharovyuk">
+    <title>Portfolio Vadim Kharovyuk</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -17,95 +303,53 @@
             color: #ffffff;
         }
         .topbar {
-            height: 60px; /* Задаем высоту */
-            background-color: #070707;
+            height: 60px;
+            background-color: rgba(7, 7, 7, 0.8);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .topbar.scrolled {
+            background-color: rgba(7, 7, 7, 0.95);
+        }
+        .menu ul.nav {
             display: flex;
-            align-items: center;
+            justify-content: center;
+            width: 100%;
         }
-
         .menu ul.nav li.nav-item {
-            margin-right: 20px; /* Добавляем отступ справа между элементами */
+            margin: 0 15px;
         }
-
-        .menu ul.nav li.nav-item:last-child {
-            margin-right: 0; /* Убираем отступ у последнего элемента */
-        }
-
         .menu ul.nav li.nav-item a.nav-link {
             color: #ffffff;
-        }
-
-
-
-        .contact_inner .social-links a {
-            display: block;
-            color: #ffffff;
-            margin: 10px 0;
-            text-decoration: none;
-        }
-        .card {
-            background-color: #333333;
-            border: none;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .card a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            background-color: #1f1f1f;
-            color: #ffffff;
-            border-radius: 23px;
-        }
-
-        .footer h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .footer .contact_inner {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .footer .social-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .footer .social-links a {
-            color: #ffffff;
             font-size: 18px;
-            text-decoration: none;
-            transition: color 0.3s ease;
+            position: relative;
+            transition: all 0.3s ease;
         }
-
-        .footer .social-links a:hover {
-            color: crimson;
+        .menu ul.nav li.nav-item a.nav-link:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            transition: all 0.3s ease;
         }
-
-
+        .menu ul.nav li.nav-item a.nav-link:hover:before {
+            width: 100%;
+        }
         .hero {
-            background-image: url('440850797_3721696354814533_3303651326190296084_n.jpg'); /* Замените на путь к вашему изображению фона */
+            background-image: url('440850797_3721696354814533_3303651326190296084_n.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-
-        .hero .container {
-            z-index: 2;
-        }
-
         .hero::before {
             content: '';
             position: absolute;
@@ -113,170 +357,276 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */
-            z-index: 1;
+            background: rgba(0, 0, 0, 0.6);
         }
-
         .hero .details {
             position: relative;
             z-index: 2;
+            text-align: center;
         }
-
         .hero h1 {
-            font-size: 48px;
+            font-size: 64px;
             font-weight: bold;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
         }
-
         .hero span {
-            font-size: 24px;
+            font-size: 32px;
             display: block;
             margin-top: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease 0.5s forwards;
         }
-
-
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .section {
+            padding: 100px 0;
+        }
+        .section h3 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .card {
+            background-color: #333333;
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .card-text {
+            flex-grow: 1;
+        }
+        .card a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .card a:hover {
+            color: #ffd700;
+        }
+        .footer {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            padding: 60px 0;
+        }
+        .footer h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        .footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .footer .social-links a {
+            color: #ffffff;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+        .footer .social-links a:hover {
+            color: #ffd700;
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
+<div class="topbar py-3">
+    <div class="container">
+        <div class="menu">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
+<div class="hero" id="home">
+    <div class="container">
+        <div class="details">
+            <h1>Vadim Kharovyuk</h1>
+            <span>Java Developer</span>
+        </div>
+    </div>
+</div>
 
-    <div class="topbar py-3">
+<main>
+    <div class="section py-5" id="about">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="menu">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="Snapseed.jpg" alt="About Me" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>About Me</h3>
+                    <p>Hello! I'm Vadim Kharovyuk, a Java developer with extensive experience in developing web applications. I specialize in Spring framework, Docker, HTML, and CSS. My projects include developing e-commerce websites, barber shop management systems, and commercial applications.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle mr-2"></i>Java Development</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Spring Framework</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Docker</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>HTML & CSS</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>PostgreSQL</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Redis</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>RabbitMQ</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Git</li>
+                        <li><i class="fas fa-check-circle mr-2"></i>Maven</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="hero text-center text-white d-flex align-items-center justify-content-center" id="home" style="height: 100vh;">
+    <div class="section py-5" id="portfolio">
         <div class="container">
-            <div class="details">
-                <h1>Vadim Kharovyuk</h1>
-                <span>Java Developer</span>
+            <h3>Selected Works</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="git.jpg" alt="Project 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Media Store</h5>
+                            <p class="card-text">Media Store - это интернет-магазин, предлагающий широкий ассортимент электронных устройств. Удобная навигация по каталогу, разнообразные способы оплаты и быстрая доставка делают покупки электроники легкими и комфортными для пользователей.</p>
+                            <a href="https://github.com/VadimKharovyuk/mediamarkt" target="_blank" class="btn btn-outline-light mt-auto">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="git.jpg" alt="Project 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">MilanaRestoran</h5>
+                            <p class="card-text">MilanaRestoran - это современный ресторан, где клиенты могут легко забронировать столик онлайн или заказать доставку блюд на дом. Удобный интерфейс и широкий выбор меню делают процесс бронирования и заказа простым и быстрым, предоставляя клиентам максимальный комфорт.</p>
+                            <a href="https://github.com/VadimKharovyuk/MilanaRestoran/tree/main" target="_blank" class="btn btn-outline-light mt-auto">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="git.jpg" alt="Project 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Flower Internet Shop</h5>
+                            <p class="card-text">Flower Internet Shop - это онлайн-магазин с богатым выбором цветочной продукции. Пользователи могут создать личный кабинет для удобного управления покупками, оформить заказ с доставкой, добавить товары в корзину и воспользоваться множеством вариантов оплаты через различные банки. Проект делает процесс покупки цветов легким и удобным для всех.</p>
+                            <a href="https://github.com/VadimKharovyuk/FlowerMicroService" target="_blank" class="btn btn-outline-light mt-auto">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="git.jpg" alt="Project 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Hospital Clink</h5>
+                            <p class="card-text">Hospital Clink - это современная клиника, где пользователи могут легко зарегистрироваться онлайн, оформить карту посетителя и записаться на прием к доктору. Система позволяет удобно следить за историей диагнозов и рекомендациями врачей, делая заботу о здоровье доступной и технологически продвинутой.</p>
+                            <a href="https://github.com/VadimKharovyuk/Modern_Clinic" target="_blank" class="btn btn-outline-light mt-auto">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="git.jpg" alt="Project 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lucky Bank</h5>
+                            <p class="card-text">Lucky Bank - это инновационная банковская система, где клиенты могут зарегистрироваться и оформить карту, воспользоваться депозитными и кредитными услугами. Система поддерживает удобные переводы с карты на карту, а также предоставляет API для сторонних сервисов оплаты. Встроенная поддержка клиентов и современный функционал делают Lucky Bank надежным и доступным финансовым инструментом.</p>
+                            <a href="https://github.com/VadimKharovyuk/Lucky__Bank2024" target="_blank" class="btn btn-outline-light mt-auto">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <main>
-        <!-- About Section -->
-        <div class="section py-5" id="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="image">
-                            <img src="Snapseed.jpg" alt="About Me" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h3>About Me</h3>
-                        <p>Hello! I'm Vadim Kharovyuk, a Java developer with extensive experience in developing web applications. I specialize in Spring framework, Docker, HTML, and CSS. My projects include developing e-commerce websites, barber shop management systems, and commercial applications.</p>
-                        <ul class="list-unstyled">
-                            <li>Java Development</li>
-                            <li>Spring Framework</li>
-                            <li>Docker</li>
-                            <li>HTML & CSS</li>
-                            <li>PostgreSQL</li>
-                            <li>Redis</li>
-                            <li>RabbitMQ</li>
-                            <li>Git</li>
-                            <li>Maven</li>
-                        </ul>
-<!--                        <a href="resume.pdf" class="btn btn-outline-light" download>Download CV</a>-->
-                    </div>
+    <footer class="footer py-5" id="contact">
+        <div class="container">
+            <h3 class="text-center">Contact Me</h3>
+            <div class="contact_inner text-center">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/name_lucky_lucky_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/name_lucky_lucky" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009226154613" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:harovyuk.vadim@icloud.com"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
+    </footer>
+</main>
 
-
-        <div class="section py-5" id="portfolio">
-            <div class="container">
-                <h3>Selected Works</h3>
-                <div class="row">
-                    <div class="col-md-3 mb-4">
-                        <div class="card h-100">
-                            <img src="git.jpg" alt="Project 1" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Media Store</h5>
-                                <p>Онлайн магазин електроной технки </p>
-                                <a href="https://github.com/VadimKharovyuk/mediamarkt" target="_blank">GitHub Repository</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 mb-4">
-                        <div class="card h-100">
-                            <img src="git.jpg" alt="Project 3" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">MilanaRestoran</h5>
-                                <p>Ресторан  блюд с возможностью бронирования столика  и заказом еды на указаный адрес </p>
-                                <a href="https://github.com/VadimKharovyuk/MilanaRestoran/tree/main" target="_blank">GitHub Repository</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-3 mb-4">
-                        <div class="card h-100">
-                            <img src="git.jpg" alt="Project 3" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Lucky Bank</h5>
-                                <p>Банк с возможностью создавать акаунт  и карты для отправки среддств с карты на карту </p>
-                                <a href="https://github.com/VadimKharovyuk/LuckyBank" target="_blank">GitHub Repository</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 mb-4">
-                        <div class="card h-100">
-                            <img src="git.jpg" alt="Project 3" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Modern_Clinic</h5>
-                                <p>Клиника  с возможностью  записаться к доктору  посмотеть записи в личном акаунте  (личный акаунт для доктора + админ )</p>
-                                <a href="https://github.com/VadimKharovyuk/Modern_Clinic" target="_blank">GitHub Repository</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3 mb-4">
-                        <div class="card h-100">
-                            <img src="git.jpg" alt="Project 4" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Personnel management</h5>
-                                <p>Система управления персоналом</p>
-                                <a href="https://github.com/VadimKharovyuk/Personnel_management_system" target="_blank">GitHub Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer py-5" id="contact">
-            <div class="container">
-                <h3 class="text-center">Contact Me</h3>
-                <div class="contact_inner text-center">
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/name_lucky_lucky_/" target="_blank">Instagram</a>
-                        <a href="https://t.me/name_lucky_lucky" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
-                        <a href="https://www.facebook.com/profile.php?id=100009226154613" target="_blank">Facebook</a>
-                        <a href="mailto:harovyuk.vadim@icloud.com">Email</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-    </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Change navbar background on scroll
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            document.querySelector('.topbar').classList.add('scrolled');
+        } else {
+            document.querySelector('.topbar').classList.remove('scrolled');
+        }
+    });
+
+    // Add animation to cards on scroll
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function handleScrollAnimation() {
+        var cards = document.querySelectorAll('.card');
+        cards.forEach(function(card) {
+            if (isElementInViewport(card)) {
+                card.classList.add('animate__animated', 'animate__fadeInUp');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', handleScrollAnimation);
+    window.addEventListener('load', handleScrollAnimation);
+</script>
 </body>
 </html>
