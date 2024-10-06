@@ -1,288 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <meta name="description" content="Java Developer Portfolio">-->
-<!--    <meta name="author" content="Your Name">-->
-<!--    <title>Portfolio Vadim Kharovyuk </title>-->
-<!--    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">-->
-<!--    <style>-->
-<!--        body {-->
-<!--            font-family: 'Poppins', sans-serif;-->
-<!--            margin: 0;-->
-<!--            padding: 0;-->
-<!--            box-sizing: border-box;-->
-<!--            background-color: #121212;-->
-<!--            color: #ffffff;-->
-<!--        }-->
-<!--        .topbar {-->
-<!--            height: 60px; /* Задаем высоту */-->
-<!--            background-color: #070707;-->
-<!--            display: flex;-->
-<!--            align-items: center;-->
-<!--        }-->
-
-<!--        .menu ul.nav li.nav-item {-->
-<!--            margin-right: 20px; /* Добавляем отступ справа между элементами */-->
-<!--        }-->
-
-<!--        .menu ul.nav li.nav-item:last-child {-->
-<!--            margin-right: 0; /* Убираем отступ у последнего элемента */-->
-<!--        }-->
-
-<!--        .menu ul.nav li.nav-item a.nav-link {-->
-<!--            color: #ffffff;-->
-<!--        }-->
-
-
-
-<!--        .contact_inner .social-links a {-->
-<!--            display: block;-->
-<!--            color: #ffffff;-->
-<!--            margin: 10px 0;-->
-<!--            text-decoration: none;-->
-<!--        }-->
-<!--        .card {-->
-<!--            background-color: #333333;-->
-<!--            border: none;-->
-<!--            transition: transform 0.3s ease;-->
-<!--        }-->
-<!--        .card:hover {-->
-<!--            transform: scale(1.05);-->
-<!--        }-->
-<!--        .card a {-->
-<!--            color: #ffffff;-->
-<!--            text-decoration: none;-->
-<!--        }-->
-<!--        .card a:hover {-->
-<!--            text-decoration: underline;-->
-<!--        }-->
-<!--        .footer {-->
-<!--            background-color: #1f1f1f;-->
-<!--            color: #ffffff;-->
-<!--            border-radius: 23px;-->
-<!--        }-->
-
-<!--        .footer h3 {-->
-<!--            font-size: 24px;-->
-<!--            margin-bottom: 20px;-->
-<!--        }-->
-
-<!--        .footer .contact_inner {-->
-<!--            display: flex;-->
-<!--            flex-direction: column;-->
-<!--            align-items: center;-->
-<!--        }-->
-
-<!--        .footer .social-links {-->
-<!--            display: flex;-->
-<!--            flex-wrap: wrap;-->
-<!--            justify-content: center;-->
-<!--            gap: 20px;-->
-<!--        }-->
-
-<!--        .footer .social-links a {-->
-<!--            color: #ffffff;-->
-<!--            font-size: 18px;-->
-<!--            text-decoration: none;-->
-<!--            transition: color 0.3s ease;-->
-<!--        }-->
-
-<!--        .footer .social-links a:hover {-->
-<!--            color: crimson;-->
-<!--        }-->
-
-
-<!--        .hero {-->
-<!--            background-image: url('440850797_3721696354814533_3303651326190296084_n.jpg'); /* Замените на путь к вашему изображению фона */-->
-<!--            background-size: cover;-->
-<!--            background-position: center;-->
-<!--            height: 100vh;-->
-<!--            position: relative;-->
-<!--        }-->
-
-<!--        .hero .container {-->
-<!--            z-index: 2;-->
-<!--        }-->
-
-<!--        .hero::before {-->
-<!--            content: '';-->
-<!--            position: absolute;-->
-<!--            top: 0;-->
-<!--            left: 0;-->
-<!--            width: 100%;-->
-<!--            height: 100%;-->
-<!--            background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */-->
-<!--            z-index: 1;-->
-<!--        }-->
-
-<!--        .hero .details {-->
-<!--            position: relative;-->
-<!--            z-index: 2;-->
-<!--        }-->
-
-<!--        .hero h1 {-->
-<!--            font-size: 48px;-->
-<!--            font-weight: bold;-->
-<!--        }-->
-
-<!--        .hero span {-->
-<!--            font-size: 24px;-->
-<!--            display: block;-->
-<!--            margin-top: 10px;-->
-<!--        }-->
-
-
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-
-
-<!--    <div class="topbar py-3">-->
-<!--        <div class="container">-->
-<!--            <div class="d-flex justify-content-between align-items-center">-->
-<!--                <div class="menu">-->
-<!--                    <ul class="nav">-->
-<!--                        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--    <div class="hero text-center text-white d-flex align-items-center justify-content-center" id="home" style="height: 100vh;">-->
-<!--        <div class="container">-->
-<!--            <div class="details">-->
-<!--                <h1>Vadim Kharovyuk</h1>-->
-<!--                <span>Java Developer</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-
-
-<!--    <main>-->
-<!--        &lt;!&ndash; About Section &ndash;&gt;-->
-<!--        <div class="section py-5" id="about">-->
-<!--            <div class="container">-->
-<!--                <div class="row align-items-center">-->
-<!--                    <div class="col-md-6">-->
-<!--                        <div class="image">-->
-<!--                            <img src="Snapseed.jpg" alt="About Me" class="img-fluid">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-6">-->
-<!--                        <h3>About Me</h3>-->
-<!--                        <p>Hello! I'm Vadim Kharovyuk, a Java developer with extensive experience in developing web applications. I specialize in Spring framework, Docker, HTML, and CSS. My projects include developing e-commerce websites, barber shop management systems, and commercial applications.</p>-->
-<!--                        <ul class="list-unstyled">-->
-<!--                            <li>Java Development</li>-->
-<!--                            <li>Spring Framework</li>-->
-<!--                            <li>Docker</li>-->
-<!--                            <li>HTML & CSS</li>-->
-<!--                            <li>PostgreSQL</li>-->
-<!--                            <li>Redis</li>-->
-<!--                            <li>RabbitMQ</li>-->
-<!--                            <li>Git</li>-->
-<!--                            <li>Maven</li>-->
-<!--                        </ul>-->
-<!--&lt;!&ndash;                        <a href="resume.pdf" class="btn btn-outline-light" download>Download CV</a>&ndash;&gt;-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-
-<!--        <div class="section py-5" id="portfolio">-->
-<!--            <div class="container">-->
-<!--                <h3>Selected Works</h3>-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-3 mb-4">-->
-<!--                        <div class="card h-100">-->
-<!--                            <img src="git.jpg" alt="Project 1" class="card-img-top">-->
-<!--                            <div class="card-body">-->
-<!--                                <h5 class="card-title">Media Store</h5>-->
-<!--                                <p>Онлайн магазин електроной технки </p>-->
-<!--                                <a href="https://github.com/VadimKharovyuk/mediamarkt" target="_blank">GitHub Repository</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="col-md-3 mb-4">-->
-<!--                        <div class="card h-100">-->
-<!--                            <img src="git.jpg" alt="Project 3" class="card-img-top">-->
-<!--                            <div class="card-body">-->
-<!--                                <h5 class="card-title">MilanaRestoran</h5>-->
-<!--                                <p>Ресторан  блюд с возможностью бронирования столика  и заказом еды на указаный адрес </p>-->
-<!--                                <a href="https://github.com/VadimKharovyuk/MilanaRestoran/tree/main" target="_blank">GitHub Repository</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                    </div>-->
-
-<!--                    <div class="col-md-3 mb-4">-->
-<!--                        <div class="card h-100">-->
-<!--                            <img src="git.jpg" alt="Project 3" class="card-img-top">-->
-<!--                            <div class="card-body">-->
-<!--                                <h5 class="card-title">Lucky Bank</h5>-->
-<!--                                <p>Банк с возможностью создавать акаунт  и карты для отправки среддств с карты на карту </p>-->
-<!--                                <a href="https://github.com/VadimKharovyuk/LuckyBank" target="_blank">GitHub Repository</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div class="col-md-3 mb-4">-->
-<!--                        <div class="card h-100">-->
-<!--                            <img src="git.jpg" alt="Project 3" class="card-img-top">-->
-<!--                            <div class="card-body">-->
-<!--                                <h5 class="card-title">Modern_Clinic</h5>-->
-<!--                                <p>Клиника  с возможностью  записаться к доктору  посмотеть записи в личном акаунте  (личный акаунт для доктора + админ )</p>-->
-<!--                                <a href="https://github.com/VadimKharovyuk/Modern_Clinic" target="_blank">GitHub Repository</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-
-<!--                    <div class="col-md-3 mb-4">-->
-<!--                        <div class="card h-100">-->
-<!--                            <img src="git.jpg" alt="Project 4" class="card-img-top">-->
-<!--                            <div class="card-body">-->
-<!--                                <h5 class="card-title">Personnel management</h5>-->
-<!--                                <p>Система управления персоналом</p>-->
-<!--                                <a href="https://github.com/VadimKharovyuk/Personnel_management_system" target="_blank">GitHub Repository</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <footer class="footer py-5" id="contact">-->
-<!--            <div class="container">-->
-<!--                <h3 class="text-center">Contact Me</h3>-->
-<!--                <div class="contact_inner text-center">-->
-<!--                    <div class="social-links">-->
-<!--                        <a href="https://www.instagram.com/name_lucky_lucky_/" target="_blank">Instagram</a>-->
-<!--                        <a href="https://t.me/name_lucky_lucky" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>-->
-<!--                        <a href="https://www.facebook.com/profile.php?id=100009226154613" target="_blank">Facebook</a>-->
-<!--                        <a href="mailto:harovyuk.vadim@icloud.com">Email</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </footer>-->
-
-
-<!--    </main>-->
-<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>-->
-<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
-<!--</body>-->
-<!--</html>-->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -451,9 +166,50 @@
             color: #ffd700;
             transform: translateY(-5px);
         }
+        .profile-pic {
+
+            transition: box-shadow 0.3s;
+        }
+        .profile-pic:hover {
+            box-shadow: 0 30px 60px rgb(108, 211, 141); /* Тень при наведении */
+        }
+        .list-unstyled li {
+            position: relative; /* Для позиционирования */
+            padding: 5px 0; /* Отступ сверху и снизу */
+            transition: color 0.3s; /* Плавный переход цвета текста */
+        }
+
+        .list-unstyled li:hover {
+            color: rgb(108, 211, 141); /* Цвет текста при наведении */
+        }
+
+
+        #ripple-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        #ripple-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+
+
     </style>
 </head>
 <body>
+
 <div class="topbar py-3">
     <div class="container">
         <div class="menu">
@@ -467,6 +223,7 @@
     </div>
 </div>
 
+
 <div class="hero" id="home">
     <div class="container">
         <div class="details">
@@ -474,13 +231,14 @@
             <span>Java Developer</span>
         </div>
     </div>
+    <canvas id="ripple-canvas"></canvas>
 </div>
 
 <main>
     <div class="section py-5" id="about">
         <div class="row mt-5">
             <div class="col-12">
-                <h4 class="text-center mb-4">Skills</h4>
+                <h4 class="text-center mb-4">Навыки</h4>
                 <div id="skills-chart"></div>
             </div>
         </div>
@@ -489,7 +247,9 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="image">
-                        <img src="Snapseed.jpg" alt="About Me" class="img-fluid rounded-circle">
+<!--                        <img src="Snapseed.jpg" alt="About Me" class="img-fluid rounded-circle">-->
+                        <img src="Snapseed.jpg" alt="About Me" class="img-fluid rounded-circle profile-pic">
+
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -642,6 +402,75 @@
     window.addEventListener('scroll', handleScrollAnimation);
     window.addEventListener('load', handleScrollAnimation);
 </script>
+<script>
+    const canvas = document.getElementById('ripple-canvas');
+    const ctx = canvas.getContext('2d');
+    const heroSection = document.getElementById('home');
 
+    let width, height, ripples;
+
+    function init() {
+        width = heroSection.offsetWidth;
+        height = heroSection.offsetHeight;
+        canvas.width = width;
+        canvas.height = height;
+        ripples = [];
+    }
+
+    class Ripple {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+            this.radius = 0;
+            this.maxRadius = 80; /* Максимальный радиус волны */
+            this.speed = 1.2; /* Скорость расширения волны */
+            this.opacity = 0.6;
+            this.lineWidth = 2; /* Толщина линии волны */
+        }
+
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+            ctx.strokeStyle = `rgba(255, 255, 255, ${this.opacity})`;
+            ctx.lineWidth = this.lineWidth;
+            ctx.stroke();
+        }
+
+        update() {
+            this.radius += this.speed;
+            this.opacity = Math.max(0, 1 - (this.radius / this.maxRadius)); /* Затухание волны */
+            this.lineWidth = Math.max(0.5, this.opacity * 5); /* Изменение толщины линии */
+            this.draw();
+            return this.opacity > 0;
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        ripples = ripples.filter(ripple => ripple.update());
+        requestAnimationFrame(animate);
+    }
+
+    function addRipple(e) {
+        const rect = canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        ripples.push(new Ripple(x, y));
+    }
+
+    window.addEventListener('resize', init);
+    heroSection.addEventListener('mousemove', addRipple);
+    heroSection.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        const rect = canvas.getBoundingClientRect();
+        const x = touch.clientX - rect.left;
+        const y = touch.clientY - rect.top;
+        addRipple({ clientX: x, clientY: y });
+    });
+
+    init();
+    animate();
+</script>
 </body>
 </html>
