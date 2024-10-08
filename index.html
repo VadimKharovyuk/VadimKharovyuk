@@ -208,20 +208,25 @@
         }
         @media screen and (max-width: 768px) {
             .topbar {
-                height: auto;
+                height: 60px; /* Фиксированная высота */
+                overflow-x: auto; /* Горизонтальная прокрутка при необходимости */
+                white-space: nowrap; /* Предотвращает перенос на новую строку */
             }
 
             .menu ul.nav {
-                flex-direction: column;
-                align-items: center;
+                display: inline-flex; /* Inline-flex для горизонтального расположения */
+                justify-content: flex-start; /* Выравнивание элементов в начале */
+                width: auto; /* Автоматическая ширина */
+                padding: 0 15px; /* Отступы по бокам */
             }
 
             .menu ul.nav li.nav-item {
-                margin: 10px 0;
+                margin: 0 10px; /* Уменьшенные отступы между элементами */
             }
 
             .menu ul.nav li.nav-item a.nav-link {
-                font-size: 16px;
+                font-size: 14px; /* Уменьшенный размер шрифта */
+                padding: 10px 5px; /* Уменьшенные отступы вокруг текста */
             }
 
             .hero h1 {
@@ -289,6 +294,8 @@
         }
 
         /* Остальные стили остаются без изменений */
+
+
 
 
     </style>
