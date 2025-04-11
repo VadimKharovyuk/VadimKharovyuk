@@ -1,5 +1,42 @@
 # 💫 About Me:
-👋 Hi there, I'm Vadim<br>💻 Java Developer | Spring Ecosystem<br>🛠️ Tech Stack<br>Spring Ecosystem<br><br>Spring Boot - Creating standalone, production-grade Spring applications<br>Spring MVC - Building flexible web applications<br>Spring Security - Implementing authentication and authorization<br>Spring Data - Simplifying data access layer<br><br>Database Technologies<br><br>PostgreSQL/MySQL - Designing efficient relational database schemas<br>Hibernate/JPA - Object-relational mapping<br>Redis - In-memory data structure store for caching and messaging<br><br>Microservices<br><br>Spring Cloud - Distributed system patterns implementation<br>Service Discovery - Dynamic detection of services<br>API Gateway - Routing and filtering requests<br><br>Message Brokers<br><br>Kafka - Building real-time data pipelines and streaming applications<br>RabbitMQ - Implementing various messaging patterns<br><br>🌱 Currently Learning<br><br>Expanding knowledge in reactive programming with Spring WebFlux<br>Exploring containerization and orchestration with Docker and Kubernetes<br>Improving CI/CD pipeline efficiency
+👋 Hi there, I'm Vadim  
+👨‍💻 Java Developer | Spring Ecosystem Specialist  
+🚀 Building robust and scalable applications  
+🔍 Focused on microservice architecture  
+⚡ Passionate about clean code and best practices  
+
+## 🛠️ Tech Stack:
+
+### 🍃 Spring Ecosystem
+- 🔄 **Spring Boot** - Creating standalone, production-grade Spring applications
+- 🌐 **Spring MVC** - Building flexible web applications
+- 🔒 **Spring Security** - Implementing authentication and authorization
+- 💾 **Spring Data** - Simplifying data access layer
+
+### 📊 Database Technologies
+- 🐘 **PostgreSQL/MySQL** - Designing efficient relational database schemas
+- 🔄 **Hibernate/JPA** - Object-relational mapping
+- ⚡ **Redis** - In-memory data structure store for caching and messaging
+
+### 🧩 Microservices
+- ☁️ **Spring Cloud** - Distributed system patterns implementation
+- 🔍 **Service Discovery** - Dynamic detection of services
+- 🚪 **API Gateway** - Routing and filtering requests
+
+### 📨 Message Brokers
+- 📊 **Kafka** - Building real-time data pipelines and streaming applications
+- 🐰 **RabbitMQ** - Implementing various messaging patterns
+
+## 🌱 Currently Learning:
+- 🔄 Expanding knowledge in reactive programming with Spring WebFlux
+- 🐳 Exploring containerization and orchestration with Docker and Kubernetes
+- 🔄 Improving CI/CD pipeline efficiency
+
+## 📈 Project Highlights:
+- 🚀 Built scalable e-commerce backend services
+- 🔒 Implemented secure authentication systems
+- 🔄 Developed real-time data processing pipelines
+- 📊 Created distributed transaction management solutions
 
 
 ## 🌐 Socials:
